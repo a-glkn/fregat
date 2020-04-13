@@ -1,0 +1,266 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
++media-breakpoint-down(xl)
+    .heading
+        &_lg
+            font-size: 40px
+
+        &_md
+            font-size: 28px
+
+        &_sm
+            font-size: 25px
+
+        &_giant
+            font-size: 100px
+    
+// ≥1280px
++media-breakpoint-down(lg)
+
+
+@media only screen and (max-width: 1200px)
+    .header
+        .cart
+            display: flex
+            &__item
+                box-shadow: none
+                span
+                    top: 29px
+            &__text
+                display: none
+
+    .menu-toggler
+        display: block
+    .header__menu
+        display: none
+    .header__right
+        display: none
+    .header-bar
+        &__inner
+            display: none
+    body
+        padding-top: 50px
+
+    .header
+        height: 50px !important
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 10
+        background-color: #fff
+        .logo
+            width: 165px
+            height: 50px
+            &:after
+                width: 125px
+                height: 42px
+                top: 5px
+                left: 0
+                background-size: 140px
+                height: 47px
+                background-size: 125px 42px
+                left: 50%
+                margin-left: -62.5px
+
+
+
+
+    .mobile-menu
+        .cart
+            display: none
+ 
+// ≥992px
++media-breakpoint-down(md)
+    .catalog
+        &_tile
+            .catalog
+                flex-wrap: wrap
+                &__item
+                    width: 50%
+
+    .section_capture
+        .form
+            margin-top: 2em
+    .icon-list
+        &__item
+            margin-top: 25px
+            width: 100%
+            &-icon
+                width: 80px
+                height: 80px
+                img
+                    width: 80px
+                    height: 80px
+                    min-width: 80px
+            &-num
+                height: 80px
+                font-size: 68px
+                line-height: 80px
+                left: 100px
+            &-text
+                margin-left: 20px
+                line-height: 1.5
+    .block
+        padding-top: 20px
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 20px
+    .banner
+        &__header
+            padding-left: 20px
+            padding-right: 20px
+        &__footer
+            padding-left: 20px
+            padding-right: 20px
+    .heading
+        &_lg
+            font-size: 36px
+
+        &_md
+            font-size: 26px
+
+        &_sm
+            font-size: 23px
+
+        &_xs
+            font-size: 18px
+
+        &_giant
+            font-size: 80px
+    .banner__icon
+        top: -52px
+    .footer
+        padding-top: 0
+        padding-bottom: 25px
+        .soc-block
+            margin-top: 25px
+        .form
+            margin-top: 0 !important
+        .menu
+            display: none
+        .copy
+            margin-top: 30px
+
+    .btn-to-top
+        display: none !important
+
+    .section_capture
+        .soc
+            margin-top: 3em !important
+
+    .catalog
+        &__item
+            width: calc(100%)
+
+    .catalog_single 
+        margin-bottom: 30px
+        .catalog__item
+            width: 100%
+            &-media
+                padding: 0
+// ≥768px
++media-breakpoint-down(sm)
+    .header
+        .cart
+            &__item
+                margin-right: 0
+
+    .mobile-menu
+        .cart
+            display: flex
+
+    .section_intro
+        height: 600px
+    .banner
+        max-width: 690px
+        &__header
+            padding-left: 20px
+            padding-right: 20px
+            padding-top: 40px
+        &__footer
+            padding-left: 20px
+            padding-right: 20px
+            padding-top: 15px
+            padding-bottom: 20px
+        &__icon
+           
+        &__line
+           display: none
+    .icons-row
+        &__item
+            height: 64px
+            min-width: 64px
+            img
+                height: 64px
+// ≥576px
++media-breakpoint-down(xs)
+    .catalog__item-info
+        padding-top: 10px
+    .catalog
+        &__item
+            flex-direction: column
+            &-media
+                width: 100%
+
+    .heading
+        &_lg
+            font-size: 30px
+
+        &_md
+            font-size: 24px
+
+        &_sm
+            font-size: 21px
+
+        &_xs
+            font-size: 16px
+
+        &_giant
+            font-size: 70px
+        
+
+    .catalog
+        &_tile
+            .catalog
+                &__item
+                    width: 100%
+
+        &_single
+            .catalog
+                &__item
+                    .catalog-tags
+                        &__item
+                            height: 21px
+                            padding-left: auto
+                            padding-right: auto
+                            font-size: 10px
+                            line-height: 21px
+
+    .section_product
+        .btn
+            min-width: 100%
+            margin-top: 20px
+
+@media only screen and (max-width: 400px)
+    .header
+        .cart
+            &__item
+                display: none
+                &_lg
+                    display: block
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

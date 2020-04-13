@@ -1,0 +1,261 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #91b3d5
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	outline: none !important
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.333
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+b, strong
+	font-weight: bold
+
+img
+	max-width: 100%
+	height: auto
+
+.contacts
+	margin-top: 1em
+	font-size: 14px
+	color: #2a2a2a
+	font-weight: 500
+	a
+		color: #2a2a2a
+		text-decoration: none
+		&:hover
+			color: $accent
+	&__time
+		font-size: 14px
+		color: #888888
+		font-weight: 500
+	&__info
+		height: 48px
+		display: flex
+		&-inner
+			margin: auto 0
+		span
+			display: block
+			margin-right: 20px
+	&.contacts-1
+		padding-left: 30px
+.td-lt
+	text-decoration: line-through
+
+.header
+	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05)
+	height: 130px
+	background-color: #fff
+	.cart
+		display: none
+		position: absolute
+		right: 60px
+		top: 0px
+		justify-content: flex-end
+	.logo
+		width: 288px
+		height: 130px
+		position: relative
+		display: block
+		z-index: 10
+		background-color: $accent
+		&:after
+			width: 229px
+			height: 77px
+			content: ''
+			display: block
+			position: absolute
+			background-image: url(../img/logo.png)
+			background-repeat: no-repeat
+			background-position: 0 0
+			top: 16px
+			left: 12px
+		&:before
+			height: 100%
+			content: ''
+			display: block
+			position: absolute
+			left: -2559px
+			width: 2560px
+			top: 0
+			background: $accent
+	&__right
+		padding-left: 288px + 15px
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+
+
+	
+
+	&__menu
+		position: relative
+		>ul
+			margin: 0
+			>li
+				list-style: none
+				>a
+					font-size: 14px
+					color: #212121
+					font-weight: 500
+					text-decoration: none
+					transition: .3s ease
+					&:hover
+						color: $accent
+		>ul
+			display: flex
+			>li
+				width: 22.5%
+				height: 50px
+				>a
+					height: 50px
+					display: inline-block
+					line-height: 50px
+					position: relative
+					width: 100%
+					padding-left: 25px
+					padding-right: 30px
+					&:before
+						content: ''
+						display: block
+						background-color: #e9e9e9
+						width: 1px
+						height: 30px
+						position: absolute
+						top: 10px
+						right: 0
+		
+				&.more
+					width: 10%
+					>a
+						background-image: url(../img/more.png)
+						background-repeat: no-repeat
+						background-position: center 17px
+				
+
+				&.has-submenu
+					>a
+						&:after
+							content: ''
+							display: block
+							position: absolute
+							top: 23px
+							right: 15px
+							width: 14px
+							height: 7px
+							background-image: url(../img/arr-down.png)
+							background-repeat: no-repeat
+							background-position: 0 0
+					&.more
+						>a
+							&:after
+								display: none
+
+					&:hover
+						&.has-submenu
+							>a
+								color: $accent
+								&:after
+									transform: rotate(180deg)
+						.dropdown-menu
+							opacity: 1
+							display: block
+
+
+.header-fixed
+	.header
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 50px
+		z-index: 101
+		transform: translate(0)
+		.logo
+			height: 50px
+			&:after
+				width: 125px
+				height: 42px
+				top: 5px
+				background-size: 125px 42px
+				left: 50%
+				margin-left: -62.5px
+		.contacts
+			display: none
+
+	.header-bar__inner 
+		.cart
+			z-index: 100
+			position: fixed
+			top: 85px
+			right: 15px
+
+.section_intro
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 750px
+	display: flex
+	.container
+		margin-top: auto
+		margin-bottom: auto
+
+.section.section_h-570
+	height: 570px
+	
+
+.section_capture
+	.heading
+		a
+			color: #fff
+
+	p
+		max-width: 460px
+		font-size: 16px
+		line-height: 30px
+
+.footer
+	padding-top: 45px
+	padding-bottom: 35px
+	.copy
+		margin-top: 80px
+		color: #888888
+		font-size: 16px
+
+	.soc-block
+		margin-top: 47px
+
+@import "media" // Always at the end
