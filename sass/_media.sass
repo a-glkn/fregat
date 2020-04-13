@@ -24,9 +24,9 @@
  
 // ≥992px
 +media-breakpoint-down(md)
-    .catalog
+    .catalog-block
         &_tile
-            .catalog
+            .catalog-block
                 flex-wrap: wrap
                 &__item
                     width: 50%
@@ -90,13 +90,13 @@
         .soc
             margin-top: 3em !important
 
-    .catalog
+    .catalog-block
         &__item
             width: calc(100%)
 
-    .catalog_single 
+    .catalog-block_single 
         margin-bottom: 30px
-        .catalog__item
+        .catalog-block__item
             width: 100%
             &-media
                 padding: 0
@@ -132,9 +132,9 @@
                 height: 64px
 // ≥576px
 +media-breakpoint-down(xs)
-    .catalog__item-info
+    .catalog-block__item-info
         padding-top: 10px
-    .catalog
+    .catalog-block
         &__item
             flex-direction: column
             &-media
@@ -157,14 +157,14 @@
             font-size: 70px
         
 
-    .catalog
+    .catalog-block
         &_tile
-            .catalog
+            .catalog-block
                 &__item
                     width: 100%
 
         &_single
-            .catalog
+            .catalog-block
                 &__item
                     .catalog-tags
                         &__item

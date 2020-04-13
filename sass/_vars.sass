@@ -371,7 +371,8 @@ $gutter: $grid-gutter-width
         &.active
             border-color: #2585e5
             cursor: default
-.catalog
+
+.catalog-block
     justify-content: space-between
     display: flex
     flex-wrap: wrap
@@ -441,7 +442,7 @@ $gutter: $grid-gutter-width
                 color: #2a2a2a
 
     &_tile
-        .catalog
+        .catalog-block
             &__item
                 width: 25%
                 flex-direction: column
@@ -477,7 +478,7 @@ $gutter: $grid-gutter-width
                     justify-content: center
 
     &_single
-        .catalog
+        .catalog-block
             &__item
                 width: 100%
                 .catalog-tags
@@ -519,7 +520,7 @@ $gutter: $grid-gutter-width
                             display: flex
                             margin: auto
     &_transparent
-        .catalog
+        .catalog-block
             &__item
                 padding: 0
                 background-color: transparent
