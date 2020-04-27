@@ -64,6 +64,47 @@ img
 	height: 570px
 	
 
+.section_delivery-banner
+	background-repeat: no-repeat
+	background-position: center
+	.container-inner
+		padding-right: 320px
+
+.section_delivery-intro
+	height: 450px
+	background-color: #004587
+	position: relative
+	display: flex
+	.container
+		margin: auto
+		position: relative
+		z-index: 2
+		display: none
+	&:before
+		content: ''
+		display: block
+		height: 100%
+		width: 2000px
+		position: absolute
+		left: 50%
+		margin-left: -2000px
+		top: 0
+		background-image: url(../img/bg-x.jpg)
+		background-repeat: repeat-x
+	&:after
+		width: 100%
+		content: ''
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		background-image: url(../img/bg-d.jpg)
+		background-repeat: no-repeat
+		background-position: center
+	.heading_xs
+		sup
+			color: #000
 .section_capture
 	.heading
 		a

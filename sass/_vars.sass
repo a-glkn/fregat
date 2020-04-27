@@ -26,6 +26,9 @@ $gutter: $grid-gutter-width
 .bg-grey
     background-color: #fcfcfc
 
+.bg-cover
+    background-size: cover
+
 .text-black
     color: #2a2a2a !important
     
@@ -52,6 +55,10 @@ $gutter: $grid-gutter-width
         padding-bottom: 20px
         border-bottom: 1px solid #e5e5e5
 
+.font-semibold
+    font-weight: 500
+.font-normal
+    font-weight: normal
 
 .section
     p
@@ -89,7 +96,15 @@ $gutter: $grid-gutter-width
     background-color: transparent
 
    
-
+.offer
+    background-color: #2585e5
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    padding-left: 30px
+    padding-right: 300px
+    padding-top: 40px
+    padding-bottom: 40px
 .banner
     max-width: 690px
     &__header
@@ -147,6 +162,11 @@ $gutter: $grid-gutter-width
         position: relative
         width: 49%
         margin-top: 48px
+        a
+            color: #2585e5
+            text-decoration: underline
+            &:hover
+                text-decoration: none
         &-icon
             width: 120px
             height: 120px
@@ -167,11 +187,17 @@ $gutter: $grid-gutter-width
             z-index: 2
             color: $text
             display: flex
+            flex-direction: column
             margin-top: auto
             margin-bottom: auto
             font-size: 16px
             line-height: 1.875
             font-weight: 500
+    &_w-100p
+        .icon-list
+            &__item
+                width: 100%
+
 
 .checkbox
     text-align: left
@@ -242,6 +268,14 @@ $gutter: $grid-gutter-width
     right: 40px
     bottom: 40px
     display: none
+a.btn
+    &_common
+        display: inline-block
+        line-height: 50px
+        text-align: center
+        text-decoration: none
+        color: #fff
+    
 .form
     &__heading
         font-size: 16px

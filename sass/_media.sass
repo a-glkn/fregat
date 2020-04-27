@@ -2,7 +2,7 @@
 
 
 /*==========  Desktop First  ==========*/
-+media-breakpoint-down(xl)
++media-breakpoint-down(lg)
     .heading
         &_lg
             font-size: 40px
@@ -16,14 +16,29 @@
         &_giant
             font-size: 100px
     
-// ≥1280px
-+media-breakpoint-down(lg)
+    .section_delivery-intro
+        &:after
+            display: none
+        &:before
+            width: 100%
+            margin-left: 0
+            left: 0
+        .container
+            display: block
 
+        .heading_xs
+            font-weight: normal
+            color: #000
 
 
  
 // ≥992px
 +media-breakpoint-down(md)
+    .offer
+        padding-right: 30px
+    .section_delivery-banner
+        .container-inner
+            padding-right: 0
     .catalog-block
         &_tile
             .catalog-block
